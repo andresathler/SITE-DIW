@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>trabalho</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9d54cbba8e.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="carregaPerfil (), carregaFollowers()">
+    <header class="header">
+        <nav class="navbar navbar-expand-md navbar-light nav_position bg-custom">
+            <div class="navbar-brand d-md-none">
+                <form id="MyForm" class="form-inline my-2 my-md-0">
+                    <div class="input-group">
+                        <div class="input-group-prepend hide-in-iphone-5">
+                            <span class="input-group-text" id="basic-addon1_1"><i
+                                    class="fas fa-search form-control-icon"></i></span>
+                        </div>
+                        <input id ="search" type="text" class="form-control input-group-form-search pesquisar"
+                            placeholder="Pesquisar" aria-label="pesquisar" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary input-group-append-btn" type="button"
+                                id="button-addon1_2"><i class="far fa-times-circle"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#perfil">perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#projeto">followers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#experiencia">experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#repositorio_github">repósitorio
+                            github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#conteudo_recomendacao">counteúdo</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 d-none d-md-flex align-baseline">
+                    <div class="input-group">
+                        <div class="input-group-prepend ">
+                            <span class="input-group-text" id="basic-addon1"><i
+                                    class="fas fa-search form-control-icon"></i></span>
+                        </div>
+                        <input onkeyup = "searchUser ()" type="text" class="form-control input-group-form-search" placeholder="Pesquisar"
+                            aria-label="esquisar" aria-describedby="basic-addon1">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary input-group-append-btn" type="button"
+                                id="button-addon2"><i class="far fa-times-circle"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </nav>
+
+
+    </header>
+    <div class="container-fluid">
+        <main class="main">
+
+            <div class="row perfil" id="perfil">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row">
+                        <div id="imgPerfil" class="img_perfil"></div>
+                        <div id="perfilTxt"
+                            class="d-flex flex-column justify-content-between col-12 col-lg-7 col-md-10 col-sm-12 txt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row projeto" id="projeto">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-12 projeto">
+                            <H1>Followers</H1>
+                        </div>
+                    </div>
+
+                    <div id="followersCard" class="row card_projeto followersName"></div>
+                </div>
+            </div>
+
+            <div class="row experiencia1" id="experiencia">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row experiencia_title">
+                        <div class="col-md-12 col-sm-12 projeto">
+
+                            <h1>Experiências</h1>
+                        </div>
+                    </div>
+                    <div class="row cards_experiencia">
+                        <ul class="list-experinces">
+                            <li>
+                                <img class="logo-enterprise" src="img/BH_notebooks.jpg" alt="Logo Compasso">
+                                <div class="text-container">
+                                    <h3>Estagio - BH notebookes</h3>
+                                    <p>Trabalho na manutenção de notebooks seminovos</p>
+                                    <p class="period">Período: 08/21 até o momento</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="logo-enterprise" src="img/central.jpg" alt="Logo Compasso">
+                                <div class="text-container">
+                                    <h3>Lider de pequenos grupos da Central</h3>
+                                    <p>Lider de um pequeno grupo da igreja batista central - trabalho voluntario</p>
+                                    <p class="period">Período: 06/15 até atualmente</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="logo-enterprise" src="img/cefast.jpg" alt="Logo Compasso">
+                                <div class="text-container">
+                                    <h3>Grupo escolar - CEFET Drone</h3>
+                                    <p>Equipe de campeonato de drone para fins academicos</p>
+                                    <p class="period">Período: 06/17 até 10/18</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row repositorio_github" id="repositorio_github">
+                <div class="col-12 background_repositorio">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="row">
+                                <div class="col-md-8 col-sm-10">
+                                    <h1>Repositórios GitHub</h1>
+                                </div>
+                            </div>
+                            <div class="row card_projeto">
+
+                                <div class="card card_repositorio" style="width: 25rem;">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto">
+                                            <a href="https://github.com/andresathler/SITE-DIW.git" target="_blank"><i
+                                                    class="fas fa-folder fa-3x img_folder"></i></a>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body px-2">
+                                                <h4 class="card-title card_repositorio_title">Site - DIW</h4>
+                                                <p class="card-text">
+                                                    <b>Avaliação: </b>Site criado para a matéria de Desenvolvimento de
+                                                    Interface Web DIW, esse mesmo site que você esta mexendo agora.
+                                                </p>
+                                                <p class="card-post">
+                                                    Atualizado em: 30/09/2021
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card card_repositorio" style="width:25rem;">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto">
+                                            <a href="https://github.com/andresathler/LISTA04_AED.git"><i
+                                                    class="fas fa-folder fa-3x img_folder"></i></a>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body px-2">
+                                                <h3 class="card-title card_repositorio_title">Lista 04 - AEDI</h3>
+                                                <p class="card-text">
+                                                    <b>Avaliação: </b>Lista 04 da materia de Algoritimos e estruturas de
+                                                    dado 1, AEDI.
+                                                </p>
+                                                <p class="card-post">
+                                                    Atualizado em: 30/09/2021
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card card_repositorio" style="width:25rem;">
+                                    <div class="row no-gutters">
+                                        <div class="col-auto">
+                                            <a href="https://github.com/andresathler/LISTA05_AED.git"><i
+                                                    class="fas fa-folder fa-3x img_folder"></i></a>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body px-2">
+                                                <h3 class="card-title card_repositorio_title">Lista 05 - AEDI</h3>
+                                                <p class="card-text">
+                                                    <b>Avaliação: </b>Lista 05 da materia de Algoritimos e estruturas de
+                                                    dado 1, AEDI.
+                                                </p>
+                                                <p class="card-post">
+                                                    Atualizado em: 30/09/2021
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row conteudo_recomendacao" id="conteudo_recomendacao">
+                <div class="col-md-8 offset-md-2">
+                    <div class="col-12 recomendacao">
+                        <H1>Recomendação de Conteúdo</H1>
+                    </div>
+                    <div class="row card_recomendacao">
+
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="iframe-container">
+                                <iframe width="290" height="170" src="https://www.youtube.com/embed/6mUCcsnCn08"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="row txt">
+                                <div class="col-md-12">
+                                    <p><b>Video:</b> Esse é um dos vídeos mais especiais que produzimos no Código Fonte
+                                        TV. Temos que abrir o tapete vermelho para a Linguagem que é a "Mãe" das
+                                        linguagens mais modernas de alto nível que utilizamos hoje. Seja muuuuito bem
+                                        vinda ao Dicionário do Programador... C!</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <p><b>Diretor:</b> <a
+                                            href="https://www.youtube.com/channel/UCFuIUoyHB12qpYa8Jpxoxow"
+                                            target="_blank" class="video_conteudo">Código Fonte TV</a></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><b>Estreia:</b> 2020 </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="iframe-container">
+                                <iframe width="370" height="220" src="https://www.youtube.com/embed/0ITSWrTFQDw"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="row txt">
+                                <div class="col-md-12">
+                                    <p><b>Video:</b> Pregração valor do reino do pastor Renato Rende</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <p><b>Diretor:</b> <a
+                                            href="https://www.youtube.com/channel/UCrnsVXV8ZM8xd_R691-qNqA"
+                                            target="_blank" class="video_conteudo">Central</a></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><b>Estreia:</b> 2020 </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="iframe-container">
+                                <iframe width="370" height="220" src="https://www.youtube.com/embed/r8KWciNmEGw"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="row txt">
+                                <div class="col-md-12">
+                                    <p><b>Video:</b> Neste vídeo você verá como a Inteligência Artificial aprendeu a
+                                        estacionar um carro nos mais diferentes tipos de vagas!!
+
+                                        O algoritmo implementado foi uma Rede Neural Artificial (Perceptron Multilayer).
+                                        A função de ativação utilizada em todos os neurônios foi a ReLU.
+                                        O método de aprendizagem é comumente chamado de ''Random Mutations".
+                                        A linguagem utilizada em todo o processo foi a Linguagem C juntamente da
+                                        biblioteca gráfica SDL.</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <p><b>Diretor:</b> <a
+                                            href="https://www.youtube.com/channel/UCf_kacKyoRRUP0nM3obzFbg"
+                                            target="_blank" class="video_conteudo">Universo Programado</a></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p><b>Estreia:</b> 2020 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-10 footter_text">
+                <p>Copyright 2021 - Disciplina de Desenvolvimento de Interface Web - <b>ICEI PUC MINAS</b>
+                </p>
+
+            </div>
+            <div class="col-md-2">
+                <img src="img/logo_curso-removebg-preview.png" class="logo">
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

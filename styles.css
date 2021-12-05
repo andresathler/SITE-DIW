@@ -1,0 +1,515 @@
+/*HEADER INICIO*/
+
+header{
+    padding-bottom: 10px;
+}
+
+
+.bg-custom{
+    background-color: #b9b9b9;
+}
+    /*MENU HEADER INICIO*/
+.center{
+    margin: auto;
+}
+    /*MENU HEADER FIM*/
+    /*SEARCH HEADER INICIO*/
+
+
+.input-group{
+    background-color: #b9b9b9 !important;
+    border-radius: 6px;
+    border: solid 1px black;
+}
+
+.input-group-text{
+    border: none;
+    background-color: transparent !important;
+}
+
+
+.input-group-form-search{
+    border: none;
+    background-color: transparent !important;
+    border-color: black !important;
+}
+
+.input-group-form-search:focus{
+    box-shadow: none;
+}
+
+.input_search_header{
+    padding: 8px 16px 8px 16px;
+}
+
+.btn-outline-secondary:focus{
+    box-shadow: none;
+}
+.btn-outline-secondary:active:focus{
+    box-shadow: none !important;
+}
+.btn-outline-secondary:active{
+    color: #6c757d !important;
+}
+.btn-outline-secondary:hover{
+    color: #6c757d !important;
+}
+    /*SEARCH HEADER FIM*/
+
+/*HEADER FIM*/
+
+/*PERFIL INICIO*/
+
+.img_perfil{
+    width: 260px;
+    height: 450px;
+    border-radius: 20px;
+
+}
+
+.input-group-append-btn{
+    border: none;
+    background-color: transparent !important;
+
+}
+
+.perfilName a{
+    color: #000000;
+}
+
+.perfilName a:hover{
+    color: #1d1b1bb7;
+    text-decoration: none;
+}
+
+.perfilDescription a{
+    color: #000000;
+}
+
+.perfilDescription a:hover{
+    color: #1d1b1bb7;
+    text-decoration: none;
+}
+
+.redes-sociais a{
+    padding: 15px;
+    color: #2c2c2c;
+}
+
+/*PERFIL FIM*/
+
+/*PROJETO INICIO*/
+
+
+.followersName p a{
+    color: #000000;
+}
+
+.followersName p a:hover{
+    color: #1d1b1bb7;
+    text-decoration: none;
+}
+
+.projeto{
+    margin-top: 30px;
+}
+
+.dropdown_button_projeto{
+    float: right;
+}
+
+.btn-secondary:focus{
+    box-shadow: none !important;
+}
+
+.card_projeto{
+    justify-content: space-between;
+}
+
+.card_projeto .card{
+    margin-top: 20px;
+    padding: 0px;
+}
+
+
+.btn-secondary {
+    color: black;
+    background-color: #ffffff00;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    color: black;
+    background-color: #ffffff00;
+    border-color: #000000;
+}
+
+.btn-secondary:active {
+    color: black !important;
+    background-color: #ffffff00 !important;
+    border-color: black !important;
+}
+
+.show>.btn-secondary.dropdown-toggle {
+    color: black;
+    background-color: #ffffff00;
+    border-color: black;
+}
+
+.dropdown_button{
+    margin-top:50px;
+}
+
+.carregar_button button{
+    margin-top: 20px;
+    float: right !important;
+    background-color: rgba(95, 91, 91, 0.89);
+    border-color: gray;
+}
+
+.carregar_button button:hover{
+    background-color: gray;
+    border-color: gray;
+}
+
+.carregar_button button:active{
+    background-color: gray !important;
+    border-color: gray !important;
+}
+
+.carregar_button button:focus{
+   box-shadow: none !important;
+}
+
+/*PROJETO FIM*/
+
+/*EXPERIENCIA INICIO*/
+
+.align-center {
+    padding-top: 35px;
+}
+
+.list-experinces {
+    list-style: none;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.list-experinces li {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(206, 206, 204);
+    display: flex;
+}
+
+.list-experinces li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.logo-enterprise {
+    width: 150px;
+    height: 120px;
+    border: 2px solid transparent;
+    object-fit: cover;
+    object-position: 50%;
+    border-radius: .5rem;
+    background: #ffffff;
+}
+
+  .text-container {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.cards_experiencia{
+    margin-top: 30px;
+    justify-content: space-between;
+
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+
+}
+
+.img_experiencia{
+    width: 12rem;
+}
+
+.card_repositorio_title{
+    color: black;
+    font-weight: bold;
+    justify-self: center;
+}
+
+ .repositorio_github{
+    margin-top: 30px;
+    background-color: #b9b9b9;
+}
+
+.repositorio_github h1{
+    margin-top: 30px;
+    color: #414f5c;
+}
+
+
+.card_repositorio {
+    flex-direction: row;
+    align-items: top;
+    width: 20rem;
+}
+
+
+.img_folder{
+    color: black;
+    background-color: #9b9696;
+    padding: 10px;
+    border-radius: 40px;
+    vertical-align: 2px;
+}
+
+.card_repositorio{
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    size: 100px;
+}
+
+
+.card-post{
+    font-weight: bold;
+}
+
+/*EXPERIENCIA INICIO*/
+
+/*RECOMENDAÇÃO INICIO*/
+
+.conteudo_recomendacao{
+    margin-top: 20px;
+}
+
+
+.card_recomendacao{
+    flex-direction: row;
+}
+
+.video{
+    display: block;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*RECOMENDAÇÃO FIM*/
+
+/*FOOTER INICIO*/
+
+.footer{
+    margin-top: 20px;
+    background: #b9b9b9;
+    color: black;
+    font-style: oblique;
+    font-size: 1.2rem;
+}
+
+.footer p{
+    padding: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.footer b{
+        color: rgb(2, 2, 29);
+}
+
+.logo{
+    width: 100px;
+    float: right;
+}
+
+#menuToggle {
+    display: none;
+  }
+.menu-icon {
+    display: none;
+}
+
+/*FOOTER FIM*/
+
+/* Media Queries */
+
+@media (max-width: 410px) {
+    .hide-in-iphone-5 {
+        display: none;
+    }
+}
+
+@media (max-width: 390px) {
+    .pesquisar {
+        font-size:0.75em;
+    }
+}
+
+@media (max-width: 340px) {
+    .pesquisar {
+        font-size:0.6em;
+    }
+}
+
+@media (max-width: 690px) {
+
+    h1 {
+      text-align: center;
+    }
+
+    .carregar_button button{
+        margin: auto;
+        text-align: center !important;
+        float: none !important;
+    }
+
+    .img_perfil{
+        margin: auto;
+        width: 260px;
+        height: 300px;
+    }
+
+    .redes-sociais{
+        text-align: center;
+    }
+
+    .dropdown_button_projeto {
+        margin: auto;
+        text-align: center;
+        float: none;
+    }
+    .card_projeto{
+        margin: auto;
+        width: 90%;
+    }
+
+    .card_projeto{
+        margin: auto;
+        width: 75%;
+    }
+
+    .main-me {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .description-container {
+      text-align: center;
+    }
+
+    .me-container {
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+    }
+
+    .social-container {
+      margin-top: .5rem;
+    }
+
+    .social-container h2 {
+      margin-bottom: 0;
+    }
+
+    .projects-title-container {
+      flex-direction: column;
+    }
+
+    .projects-title-container h2 {
+      margin-bottom: .5rem;
+    }
+
+    .projects-list h3 {
+      text-align: center;
+    }
+
+    .main-experience {
+      width: 90%;
+      margin-top: 2rem;
+    }
+
+    .period {
+      font-size: 1rem;
+    }
+
+    .content p {
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: 920px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+@media screen and (min-width:601px) and (max-width:980px){
+
+
+    .card_projeto {
+        justify-content: center;
+        width: 20rem;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .nav_position{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .main{
+        margin-top: 140px;
+    }
+
+    #menuToggle:checked ~ label i:nth-child(2) {
+      display: block;
+    }
+    #menuToggle:checked ~ label i:first-child {
+      display: none;
+    }
+    #menuToggle:not(:checked) ~ label i:first-child {
+      display: block;
+    }
+    #menuToggle:not(:checked) ~ label i:nth-child(2) {
+      display: none;
+    }
+
+    #menuToggle:checked ~ nav {
+        height: 100%;
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+}
